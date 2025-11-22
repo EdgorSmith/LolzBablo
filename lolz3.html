@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Неправильно</title>
+    <style>
+        /* Цветовые переменные */
+        :root {
+            --light-green-text: #0ABD79;  /* Цвет текста */
+            --site-bg: #1C1C1C;          /* Фон сайта */
+        }
+        
+        body {
+            background-color: var(--site-bg); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Центрируем по вертикали */
+            align-items: center;    /* Центрируем по горизонтали */
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+            color: var(--light-green-text); /* Основной цвет текста */
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .main-message {
+            font-size: 2.5em; /* Большой размер для основного текста */
+            margin-bottom: 15px; /* Отступ между текстом и смайликом */
+            text-transform: uppercase;
+        }
+
+        .sad-smiley {
+            font-size: 3em; /* Большой размер для смайлика */
+            line-height: 1; /* Убираем лишний интервал */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-message">
+        Неправильно
+    </div>
+    <div class="sad-smiley">
+        ):
+    </div>
+
+</body>
+</html>

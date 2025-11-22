@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хочешь денег?</title>
+    <style>
+        /* Цветовые переменные */
+        :root {
+            --dark-green-border: #004d33; /* Темно-зеленый цвет для обводки */
+            --light-green-text: #0ABD79;  /* Светло-зеленый цвет текста */
+            --site-bg: #1C1C1C;          /* Фон сайта */
+            --header-bg: #1F2825;        /* Фон заголовка, кнопки и нижнего текста */
+            --box-bg: #2F2F2F;           /* Фон блока изображения */
+        }
+        
+        body {
+            /* Цвет фона у сайта #1C1C1C */
+            background-color: var(--site-bg); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            color: #E0E0E0; 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* Контейнер для центрирования всего содержимого */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Общий стиль для всех текстовых контейнеров с фоном */
+        .text-container-bg {
+            background-color: var(--header-bg); /* #1F2825 */
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-align: center;
+            display: inline-block; 
+        }
+
+        .header-text-container {
+            margin-bottom: 25px; 
+        }
+
+        .header-text {
+            color: var(--light-green-text); /* Цвет текста #0ABD79 */
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .content-box {
+            /* Основной блок с изображением */
+            width: 90%; 
+            max-width: 400px; 
+            background-color: var(--box-bg); 
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; 
+            overflow: hidden; 
+        }
+
+        .main-image {
+            width: 100%; 
+            height: auto;
+            display: block;
+            border-radius: 5px;
+            /* Используем прямую ссылку на изображение */
+            content: url("https://nztcdn.com/avatar/l/1753931119/8911244.webp"); 
+            object-fit: contain; 
+        }
+        
+        /* Стили для НОВЫХ ТЕКСТОВЫХ БЛОКОВ */
+        .prompt-text-container {
+            margin-bottom: 10px; 
+        }
+        
+        .greeting-text-container {
+            margin-bottom: 25px; 
+        }
+
+        .text-content {
+            color: var(--light-green-text); /* Цвет текста #0ABD79 */
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        /* --- КОНЕЦ СТИЛЕЙ ТЕКСТА --- */
+
+        /* --- Стили для КНОПКИ "Бабло" (ТЕПЕРЬ ТЕГ <a>) --- */
+        .action-button {
+            /* Фон #1F2825 */
+            background-color: var(--header-bg); 
+            color: var(--light-green-text); /* Текст #0ABD79 */
+            border: 2px solid var(--dark-green-border); 
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 5px var(--dark-green-border); 
+            transition: all 0.3s ease-in-out;
+            margin-top: 10px; 
+            text-decoration: none; /* Убираем подчеркивание у ссылки */
+            display: inline-block; /* Делаем ссылку блочным элементом для применения padding */
+        }
+
+        .action-button:hover {
+            background-color: #25332F; 
+            box-shadow: 0 0 15px var(--light-green-text), 0 0 30px rgba(0, 173, 121, 0.6); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-text-container text-container-bg">
+            <div class="header-text">
+                хочешь денег?
+            </div>
+        </div>
+
+        <div class="content-box">
+            <img class="main-image" alt="Изображение">
+        </div>
+        
+        <div class="prompt-text-container text-container-bg">
+            <div class="text-content">
+                жмякай на кнопку ниже:)
+            </div>
+        </div>
+        
+        <div class="greeting-text-container text-container-bg">
+            <div class="text-content">
+                Удачки ^-^
+            </div>
+        </div>
+
+        <a href="lolz2.html" class="action-button">
+            Бабло
+        </a>
+    </div>
+
+</body>
+</html>

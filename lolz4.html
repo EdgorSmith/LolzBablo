@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Утверждение</title>
+    <style>
+        /* Цветовые переменные */
+        :root {
+            --light-green-text: #0ABD79;  /* Цвет текста */
+            --site-bg: #1C1C1C;          /* Фон сайта */
+            --header-bg: #1F2825;        /* Фон кнопок */
+            --dark-green-border: #004d33; /* Темно-зеленый цвет для обводки */
+        }
+        
+        body {
+            background-color: var(--site-bg); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+            color: var(--light-green-text);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 450px; 
+            width: 100%;
+        }
+
+        /* --- Стили для ИЗОБРАЖЕНИЯ (Сверху) --- */
+        .top-image {
+            width: 150px; 
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            content: url("https://i.postimg.cc/gcyLjMzK/1000000387-removebg-preview.png");
+        }
+
+        /* --- Стили для ЗАГОЛОВКОВ --- */
+        .main-heading {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 10px; 
+        }
+
+        .sub-heading {
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 30px; 
+            padding: 0 10px; 
+        }
+
+        /* --- Стили для КНОПОК (ТЕПЕРЬ ССЫЛКИ) --- */
+        .buttons-group {
+            display: flex;
+            gap: 20px; 
+            justify-content: center;
+            width: 100%;
+        }
+        
+        /* Общий стиль для ссылок-кнопок */
+        .action-button {
+            background-color: var(--header-bg); 
+            color: var(--light-green-text); 
+            border: 2px solid var(--dark-green-border); 
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none; /* Убираем подчеркивание */
+            display: inline-block; /* Позволяет применять padding и ширину */
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 5px var(--dark-green-border); 
+        }
+
+        .action-button:hover {
+            background-color: #25332F; 
+            box-shadow: 0 0 15px var(--light-green-text), 0 0 30px rgba(0, 173, 121, 0.6); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="top-image" alt="Эмоция">
+
+        <div class="main-heading">
+            смешной ли это прикол?
+        </div>
+
+        <div class="sub-heading">
+            Те, кто зарабатывает больше 2О.ОО3 гривен в месяц, должны сидеть в тюрьме.
+        </div>
+
+        <div class="buttons-group">
+            <a href="lolz5.html" class="action-button">Да</a>
+            
+            <a href="lolz5.html" class="action-button">Нет</a>
+        </div>
+    </div>
+
+</body>
+</html>

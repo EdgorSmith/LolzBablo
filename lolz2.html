@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>У кого больше всех симпатий?</title>
+    <style>
+        /* Цветовые переменные */
+        :root {
+            --light-green-text: #0ABD79;  /* Цвет текста */
+            --site-bg: #1C1C1C;          /* Фон сайта */
+            --header-bg: #1F2825;        /* Фон кнопок */
+            --dark-green-border: #004d33; /* Темно-зеленый цвет для обводки */
+            
+            /* Цвета свечения для кнопок */
+            --glow-orange: #FFA500;
+            --glow-green: #0ABD79;
+            --glow-red: #FF4500;
+        }
+        
+        body {
+            background-color: var(--site-bg); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 450px; 
+            width: 100%;
+        }
+
+        /* --- Стили для ИЗОБРАЖЕНИЯ (Сверху) --- */
+        .top-image {
+            width: 100px; /* Установите желаемый размер */
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            content: url("https://i.ibb.co/ZRQcNzNx/1000000378-no-bg-preview-carve-photos.png");
+        }
+
+        /* Общий стиль для кнопок/ссылок */
+        .styled-element {
+            background-color: var(--header-bg); 
+            color: var(--light-green-text); 
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+            border: 2px solid var(--dark-green-border); 
+            text-decoration: none; /* Для ссылок: убираем подчеркивание */
+            display: block; /* Для ссылок: занимает всю ширину */
+        }
+
+        /* --- Стили для ЗАГОЛОВКА --- */
+        .header-text-container {
+            background-color: transparent; 
+            border: none;
+            box-shadow: none;
+            padding: 0;
+            margin-bottom: 40px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px; 
+        }
+
+        .header-text {
+            color: var(--light-green-text); 
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .heart-img {
+            width: 25px; 
+            height: 25px;
+            content: url("https://i.ibb.co/5WC3JFsD/6-20251122124204.png");
+        }
+        /* --- КОНЕЦ СТИЛЕЙ ЗАГОЛОВКА --- */
+
+        /* --- Стили для КОНТЕЙНЕРА КНОПОК --- */
+        .buttons-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; 
+            width: 100%;
+            align-items: stretch; 
+        }
+
+        /* Стиль для тега <a> и <button> */
+        .action-button {
+            padding: 15px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            line-height: 1.2;
+        }
+
+        /* УНИКАЛЬНОЕ СВЕЧЕНИЕ КНОПОК/ССЫЛОК */
+        .glow-orange:hover {
+            background-color: #25332F;
+            border-color: var(--glow-orange);
+            box-shadow: 0 0 15px var(--glow-orange), 0 0 30px rgba(255, 165, 0, 0.6);
+        }
+
+        .glow-green:hover {
+            background-color: #25332F;
+            border-color: var(--glow-green);
+            box-shadow: 0 0 15px var(--glow-green), 0 0 30px rgba(10, 189, 121, 0.6);
+        }
+
+        .glow-red:hover {
+            background-color: #25332F;
+            border-color: var(--glow-red);
+            box-shadow: 0 0 15px var(--glow-red), 0 0 30px rgba(255, 69, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="top-image" alt="Думающий смайл">
+
+        <div class="header-text-container">
+            <div class="header-text">
+                у кого больше всех симпатий?
+            </div>
+            <img class="heart-img" alt="Зеленое сердечко">
+        </div>
+
+        <div class="buttons-group">
+            <a href="lolz3.html" class="action-button styled-element glow-orange">
+                у Композитора
+            </a>
+            
+            <a href="lolz4.html" class="action-button styled-element glow-green">
+                У Хомиака
+            </a>
+            
+            <a href="lolz3.html" class="action-button styled-element glow-red">
+                У КрипКрипочка
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

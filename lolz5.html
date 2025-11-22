@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравление</title>
+    <style>
+        /* Цветовые переменные */
+        :root {
+            --light-green-text: #0ABD79;  /* Цвет текста */
+            --site-bg: #1C1C1C;          /* Фон сайта */
+        }
+        
+        body {
+            background-color: var(--site-bg); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Центрируем по вертикали */
+            align-items: center;    /* Центрируем по горизонтали */
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+            color: var(--light-green-text); /* Основной цвет текста */
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .container {
+            /* Контейнер для центрирования содержимого */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px; 
+            width: 100%;
+        }
+
+        .main-text {
+            font-size: 1.8em; /* Большой размер для основного текста */
+            line-height: 1.4;
+        }
+        
+        .inline-content {
+            /* Контейнер для размещения текста и смайлика в одну строку */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px; /* Небольшой отступ между словом и смайликом */
+            margin-top: 10px; /* Отступ от первой строки текста */
+        }
+        
+        .smiley-img {
+            width: 30px; /* Маленький размер для смайлика */
+            height: 30px;
+            /* Ссылка на смайлик */
+            content: url("https://i.postimg.cc/XvnzM1Yx/1000000389-removebg-preview.png");
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-text">
+            поздравляю, ваш приз 1₽!,
+        </div>
+        
+        <div class="inline-content">
+            <div class="main-text">
+              
+              
+                так как я нищий
+            </div>
+            <img class="smiley-img" alt="Смайлик">
+        </div>
+    </div>
+
+</body>
+</html>
